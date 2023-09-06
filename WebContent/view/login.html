@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Todo - Login</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<header> 
+		<nav class="navbar navbar-default">
+			<a href="/" class="navbar-brand">Brand</a>
+			<ul class="nav navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="RegistrationServlet">Register</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Login</a></li>
+			</ul>
+		</nav>	
+	</header>
+	
+	<div class="container">
+		<form action="LoginServlet" method="post" class="form-signin" >
+			<input type="text" name="name" placeholder="Name" class="form-control"  autofocus="" required="">
+			<input type="password" name="password" placeholder="Password" class="form-control" required="">
+			<input type="submit" value="Login" class="btn btn-lg btn-success btn-block">
+		</form>
+	</div>
+
+</body>
+</html>
